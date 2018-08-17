@@ -1,0 +1,11 @@
+{% if latest_posts %}
+<ul>
+  {% for post in latest_posts %}
+  <li>
+    <a href="/posts/{{ question.id }}/">{{ post.title }}</a>
+  </li>
+  {% endfor %}
+</ul>
+{% else %}
+  <p>There are not posts available</p>
+{% endif %}
